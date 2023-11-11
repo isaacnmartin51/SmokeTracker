@@ -1,0 +1,45 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = SmokeTracker.UI
+build_property.RootNamespace = SmokeTracker.UI
+build_property.ProjectDir = /home/isaacm/repos/SmokeTracker/src/UI/
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /home/isaacm/repos/SmokeTracker/src/UI
+build_property._RazorSourceGeneratorDebug = 
+
+[/home/isaacm/repos/SmokeTracker/src/UI/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/isaacm/repos/SmokeTracker/src/UI/Components/AddSmokeLogButton.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9BZGRTbW9rZUxvZ0J1dHRvbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/isaacm/repos/SmokeTracker/src/UI/Components/SmokeLogHistory.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TbW9rZUxvZ0hpc3RvcnkucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/isaacm/repos/SmokeTracker/src/UI/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TWFpbkxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/isaacm/repos/SmokeTracker/src/UI/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/isaacm/repos/SmokeTracker/src/UI/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/isaacm/repos/SmokeTracker/src/UI/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX0hvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
