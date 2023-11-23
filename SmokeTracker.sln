@@ -1,15 +1,15 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{620AA88C-A701-46BA-8270-FC458B340A54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmokeTracker.Database", "src\Database\SmokeTracker.Database.csproj", "{448D3372-80A0-4A0B-8678-A6C216DE83DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmokeTracker.Database", "src\Database\SmokeTracker.Database.csproj", "{448D3372-80A0-4A0B-8678-A6C216DE83DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmokeTracker.UI", "src\UI\SmokeTracker.UI.csproj", "{F309829D-A739-4433-9A30-9D39A217E8CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmokeTracker.UI", "src\UI\SmokeTracker.UI.csproj", "{F309829D-A739-4433-9A30-9D39A217E8CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmokeTracker.Api", "src\Api\SmokeTracker.Api.csproj", "{F3173B8B-6FEC-44D5-AABF-D1B20C747C39}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmokeTracker.Api", "src\Api\SmokeTracker.Api.csproj", "{F3173B8B-6FEC-44D5-AABF-D1B20C747C39}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
