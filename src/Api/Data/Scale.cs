@@ -1,4 +1,4 @@
-﻿namespace SmokeTracker.Database.DatabaseEntities;
+﻿namespace SmokeTracker.Api.Data;
 
 public enum Scale
 {

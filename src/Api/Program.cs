@@ -1,34 +1,16 @@
-﻿using Microsoft.AspNetCore.Http.HttpResults;
-using Microsoft.EntityFrameworkCore;
-using SmokeTracker.Database.Context;
-using SmokeTracker.Database.DatabaseEntities;
-using SmokeTracker.Database.SeedData;
+﻿using Marten;
+using SmokeTracker.Api.Features.AddSmokeLog;
+using SmokeTracker.Api.Features.GetSmokeLogs;
 
 var builder = WebApplication.CreateBuilder(args);
 
-//TODO: See about injecting from the other project
-builder.Services.AddDbContext<SmokeTrackerContext>(o => o.UseInMemoryDatabase("test"));
+builder.Services.AddMarten("Host=localhost;Port=5432;Database=postgres;Username=postgres;password=123").UseLightweightSessions();
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(typeof(Program).Assembly));
 
 var app = builder.Build();
 
+app.MapAddSmokeLogEndpoint();
 
-using (var scope = app.Services.CreateScope())
-{
-    var db = scope.ServiceProvider.GetService<SmokeTrackerContext>();
-    db.Database.EnsureCreated();
-    db.SmokeLogs.AddRange(SeedDataGenerator.GetSmokeLogsSeedData());
-    db.SaveChanges();
-}
-
-app.MapGet("/smokelogs", async (SmokeTrackerContext db) =>
-{
-    return await db.SmokeLogs.ToListAsync();
-});
-
-app.MapPost("/smokelogs", async (SmokeLog logRequest, SmokeTrackerContext db) =>
-{
-    _ = db.Add(logRequest);
-    _ = await db.SaveChangesAsync();
-});
+app.MapGetSmokeLogsEndpoint();
 
 app.Run();
